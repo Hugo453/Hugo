@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adivina la palabra</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Enlaces Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--Enlace a nuestro archivo CSS-->
+<link rel="stylesheet" type="text/css" href="juego.css">
+</head>
+
+<body>
+
+<h4 id="nombre_jugador1"></h4> <span id="puntos_jugador1"></span>
+<br>
+<h4 id="nombre_jugador2"></h4> <span id="puntos_jugador2"></span>
+<div class="container"> 
+<center>
+
+<h2 style="color: blanchedalmond;">Adivina la palabra </h2>
+<h3 id="jugador_pregunta"></h3>
+<h3 id="jugador_respuesta"></h3>
+<div id="output" class="col-lg-6"></div>
+<br><br>
+<label> Escribe tu palabra <b style="color: rgba(50, 5, 8, 0.842);">
+Escribe una palabra de 5 o mas letras </b></label>
+<input type="text" id="palabra" class="form-control" placeholder="Palabra">
+<br>
+
+<button onclick="send()" class="btn btn-success" style="width: 30%;">Enviar</button>
+</center>
+</div>
+<!--Enlace a nuestro archivo JS-->
+<script src="juego.js"></script>
+</body>
+</html>
+
+
